@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries in CSS</title>
+    <style>
+        .media {
+            width: 400px;
+            height: 300px;
+            display: flex;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        @media(min-width: 600px) {
+            .box {
+                background-color: red;
+            }
+        }
+        /* Changes color at 600px and after */
+
+        @media(max-width: 600px) {
+            .box {
+                background-color: pink;
+            }
+        }
+        /* Changes color upto 600px and before */
+
+        @media(min-width: 200px) and (max-width: 300px) {
+            .box {
+                background-color: green;
+            }
+        } 
+        /* Stays Green from 200px to 300px */
+    </style>
+</head>
+<body>
+            <!-- Media Queries -->
+        <div class="media">
+            <div class="box">Box1 </div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+</body>
+</html>
+
+    <!-- Media Queries Example
+            @media (width: 600px) {
+                div {
+                    background-color: red;
+                }
+            } (Changes Only at the Specified Instant)
+
+            @media(min-width: 600px) {
+                div {
+                    background-color: red
+                }
+            } (Hits the media query ath the specified Instant and thereafter)
+    
+    -->

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Units in CSS</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      /* % Unit*/
+      .percentage {
+        width: 200px;
+        height: 400px;
+        background-color: mediumorchid;
+      }
+
+      .inside-percentage {
+        width: 100%;
+        height: 20%;
+        background-color: pink;
+        margin-left: 20%;
+      }
+
+      /* em Unit */
+      .parent-em {
+        width: 400px;
+        height: 400px;
+        background-color: mediumseagreen;
+        font-size: 30px;
+      }
+
+      .em {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+        font-size: 3em;
+        width: 4em;
+      }
+
+    </style>
+  </head>
+  <body>
+        
+    <!-- % Unit -->
+    <!-- Used to define a size as relative to an element's parent object -->
+    <div class="percentage">
+      <div class="inside-percentage">Hello World</div>
+    </div>
+    <br />
+    <br />
+
+    <!-- em Unit -->
+    <!-- Relative to Text Properties of Element and acts as per Parent Object -->
+    <div class="parent-em">
+      Programming
+      <div class="em">Javascript</div>
+      <p style="font-size: 90px">Javascript</p>
+    </div>
+    <br />
+    <br />
+
+  </body>
+</html>
+
+<!-- CSS Relative Units
+        % : Percentage
+        em : 
+        rem :
+        vh : Relative to 1% of ViewPort Height
+        vw : Relative to 1% of ViewPort Width
+     -->
+
+<!-- How em Works 
+        parent-body {
+            font-size: 30px;
+        }
+        child-body1 {
+            font-size: 3em; (In case of text-properties it acquires data from parent object)
+                            (So here it becomes 1em=30px
+                                                3em=3*30= 90px)
+        }
+        child-body2 {
+            font-size: 3rem; (Here 3em= 3*30= 90px) (In case of text-properties)
+            
+            width: 4em; (In case of all the other properties it acquires data from itself)
+                        (In this case it becomes 1em = 90px {acquired from itself}
+                                                4em = 4*90 = 360px)
+                        (To confirm Inspect the page in browser ans see the width in box model)
+        }
+    -->

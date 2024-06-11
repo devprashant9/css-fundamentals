@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Set 7</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: mediumseagreen;
+    }
+
+    @media(max-width: 300px) {
+        .box{
+            background-color: green;
+        }
+    }
+
+    @media(min-width: 300px) and (max-width: 400px) {
+        .box {
+            background-color: pink;
+        }
+    }
+
+    @media(min-width: 400px) and (max-width: 600px) {
+        .box{
+            background-color: red;
+        }
+    }
+
+    @media(min-width: 600px) {
+        .box{
+            background-color: orange;
+            border: 5px solid pink;
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

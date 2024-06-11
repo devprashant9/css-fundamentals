@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Scale in CSS</title>
+    <style>
+        .box {
+            width: 180px;
+            height: 300px;
+            margin-left: 100px;
+            background-color: orange;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+
+        }
+
+        .box:hover {
+            cursor: pointer;
+            background-color: mediumseagreen;
+            transform: scale(2);
+            transform: scale(0);
+            transform: scale(3, 4);
+
+            transform: scaleX(0.5);
+            transform: scaleY(2);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+<!-- CSS Transform Scale
+                
+            transform: 
+                    scale(2) (Gets Bigger)
+                    scale(0.5) (Gets Smaller)
+                    scale(1, 2) (width, height Simultaneously)
+
+                    scaleX(0.5) (along X axis only)
+                    scaleY(0.5) (along y axis only)
+        -->

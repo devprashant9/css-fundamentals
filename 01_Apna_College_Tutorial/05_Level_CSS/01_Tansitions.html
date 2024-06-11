@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        cursor: pointer;
+        transition-property: background-color, font-size;
+        transition-duration: 5s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s; 
+    }
+
+    .box:hover {
+        background-color: red;
+        font-size: 25px;
+    }
+
+    .box:active {
+        background-color: orange;
+    }
+</style>
+<body>
+     <div class="box">This is a Box</div>
+</body>
+</html>
+
+        <!-- Transistions
+
+            transistion-property
+            transistion-durantion
+            transition-timing-function
+            transition-delay 
+
+                    OR
+            
+            transistion: font-size 2s ease-in 0.2s;
+        -->

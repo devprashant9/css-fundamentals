@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property in CSS</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        margin-left: 50px;
+      }
+
+      /* Inline */
+      .box1,
+      .box2,
+      .box3 {
+        background-color: mediumseagreen;
+        display: inline;
+        margin: 20px; /* Margin is NOT Applied from Top and Bottom */
+        width: 100px; /* NOT Applicable for Inline Elements */
+        height: 100px; /* NOT Applicable for Inline Elements */
+      }
+
+      /* Block */
+      .box4,
+      .box5,
+      .box6 {
+        background-color: mediumslateblue;
+        display: block;
+      }
+
+      /* Inline Block */
+      .box7,
+      .box8,
+      .box9 {
+        background-color: mediumvioletred;
+        display: inline-block;
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+      }
+
+      /* none */
+      .box10 {
+        background-color: aqua;
+        display: none;
+      }
+
+      /* Visibility Hidden */
+      .box11 {
+        width: 100px;
+        height: 100px;
+        background-color: mediumspringgreen;
+      }
+
+      .box12 {
+        width: 100px;
+        height: 100px;
+        background-color: mediumvioletred;
+        visibility: hidden;
+      }
+
+      .box13 {
+        width: 100px;
+        height: 100px;
+        background-color: mediumpurple;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline Example -->
+    <h2>Inline Example</h2>
+    <div class="box1">BOX 1</div>
+    <div class="box2">BOX 2</div>
+    <div class="box3">BOX 3</div>
+
+    <!-- Block Example -->
+    <h2>Block Example</h2>
+    <div class="box4">BOX 1</div>
+    <div class="box5">BOX 2</div>
+    <div class="box6">BOX 3</div>
+
+    <!-- Inline-Block Example -->
+    <h2>Inline-Block Example</h2>
+    <div class="box7">BOX 1</div>
+    <div class="box8">BOX 2</div>
+    <div class="box9">BOX 3</div>
+
+    <!-- none Example -->
+    <h2>None Example</h2>
+    <div class="box10">Hello</div>
+
+    <!-- Visibility Hidden Example -->
+    <h2>Visibility Hidden</h2>
+    <div class="box11">BOX 11</div>
+    <div class="box12">BOX 12</div>
+    <div class="box13">BOX 13</div>
+  </body>
+</html>
+
+<!-- Display Property Values
+        inline: takes only space required (Changes Block Element to Inline Element)
+        block: full width
+        inline-block: is inline but act as block
+        none: remove element from document flow
+     -->
+
+        <!-- 
+            display: none VS Visibility: hidden
+
+            display: none: removes the element and no space is reserved;
+
+            visibility: hidden: removes element but the space is reserved;
+        -->

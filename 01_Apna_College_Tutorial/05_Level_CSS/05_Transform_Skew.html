@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Skew in CSS</title>
+    <style>
+        .box {
+            width: 180px;
+            height: 300px;
+            margin-left: 100px;
+            background-color: orange;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+
+        }
+
+        .box:hover {
+            cursor: pointer;
+            background-color: mediumseagreen;
+            
+            transform: skew(930deg);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+<!-- CSS Transform Skew
+                
+            transform: 
+                    skew(30deg) {stretches element by the specified degree from both sides {top-left and top-right}}
+
+                    skew(-30deg) {top-right and top-left}
+        -->

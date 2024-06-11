@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REM Unit Example</title>
+    <style>
+      /* rem Unit */
+      html {
+        font-size: 20px;
+      }
+      .rem {
+        font-size: 5rem;
+      }
+
+      .inside-rem {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- rem: root em -->
+    <div class="rem">
+      Box1
+      <div class="inside-rem">Box2</div>
+    </div>
+  </body>
+</html>
+    <!-- By Default ant text-inside a body tag is of 16px, thus if you don't specify size of root elemnt that is (html) then all rem will be calculated as 
+            (n)rem = n*16 (n is any +ve Integer)
+         -->

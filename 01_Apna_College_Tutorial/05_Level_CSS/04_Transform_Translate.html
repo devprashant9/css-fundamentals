@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Translate in CSS</title>
+    <style>
+        .box {
+            width: 180px;
+            height: 300px;
+            margin-left: 100px;
+            background-color: orange;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+
+        }
+
+        .box:hover {
+            cursor: pointer;
+            background-color: mediumseagreen;
+            
+            transform: translate(50px);
+            transform: translate(50px, 70px);
+            transform: translateX(100px);
+            transform: translateY(100px);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+<!-- CSS Transform Translate
+                
+            transform: 
+                    translate (20px) {Moves 20px on x axis}
+                    translate (20px, 50px) {moves 20px on x axis and 70px on y axis concurrently}
+
+                    translateX (20px) {moves only on xaxis}
+                    translateY (20px) {moves only on y axis}
+        -->

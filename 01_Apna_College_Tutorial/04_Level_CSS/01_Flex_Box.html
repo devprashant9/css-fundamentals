@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box in CSS</title>
+    <style>
+        .flex {
+            width: 700px;
+            height: 600px;
+            background-color: orange;
+            border: 4px solid purple;
+
+            /* Flex Box */
+            display: flex;
+
+            /* Flexbox Direction (direction determines the main axis) */
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+
+            /* Flex Properties */
+            flex-direction: row;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+
+            /* Flex Properties */
+            flex-direction: column;
+            justify-content: start;
+            justify-content: end;
+            justify-content: center;
+
+            /* Flex Properties */
+            flex-direction: row;
+
+            /* Moe Flex Properties */
+
+            
+        }
+
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: mediumseagreen;
+        border: 5px solid tomato;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        /* padding: 10px;
+        margin: 10px; */
+
+        /* flex-shrink */
+        flex-shrink: 2;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: mediumslateblue;
+        border: 5px solid black;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        /* padding: 10px;
+        margin: 10px; */
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: mediumvioletred;
+        border: 5px solid green;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        /* padding: 10px;
+        margin: 10px; */
+
+        /* flex-grow */
+        /* flex-grow: 2; */
+      }
+
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: midnightblue;
+        border: 5px solid brown;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        /* padding: 10px;
+        margin: 10px; */
+      }
+
+      .box5 {
+        width: 100px;
+        height: 100px;
+        background-color: mediumorchid;
+        border: 5px solid red;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        /* padding: 10px;
+        margin: 10px; */
+
+        /* align-self */
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex Box Playground</h2>
+    <div class="flex">
+      <div class="box1">BOX 1</div>
+      <div class="box2">BOX 2</div>
+      <div class="box3">BOX 3</div>
+      <div class="box4">BOX 4</div>
+      <div class="box5">BOX 5</div>
+    </div>
+  </body>
+</html>
+
+<!-- The Flex Box Model
+
+            flex container
+            flex items
+            main axis (vertical or horizontal)
+            cross axis (vertical or horizontal)
+        -->
+
+        <!-- Flexbox Direction
+            
+            flex-direction: row(default)
+            flex-direction: row-reverse
+            flex-direction: column
+            flex-direction: column-reverse
+        -->
+
+        <!-- all the flex items tries to reamin inside the flex container, if there is no content inside the flexbox and padding and margin are not provided. 
+            
+            They only overlap if the content inside the flex items exceeds the dimensions. It will still overlap if you set padding and margin. -->
+
+            <!-- Flex Properties
+                
+                justify-content: alignment along main axis (flex-start / flex-end / center / space-evenly)
+
+                flex-wrap: no-wrap / wrap / wrap-reverse
+
+                align-items: alignment along cross axis
+
+                align-content: alignment of space between and around the content
+
+            -->
+
+            <!-- Flex Properties
+                align-self: aligns specific item along cross axis (Highest Priority)
+
+                flex-grow: how much a flex item should grow relative to other flex items.
+
+                flex-shrink: how much a flex item should shrink relative to other flex items
+            -->

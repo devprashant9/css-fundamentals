@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index CSS</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: mediumseagreen;
+            display: inline-block;
+            border: 5px solid tomato;
+            margin-left: 10px;
+            position: relative;
+
+            /* Applying z-index */
+            z-index: 1;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: mediumslateblue;
+            display: inline-block;
+            border: 5px solid black;
+            margin-right: 10px;
+            position: relative;
+            right: 70px;
+            top: 40px;
+
+            /* Applying z-index */
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: mediumvioletred;
+            display: inline-block;
+            border: 5px solid yellowgreen;
+            margin-left: 10px;
+            position: relative;
+            top: 80px;
+            right: 160px;
+
+            /* Applying z-index */
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Z Index CSS</h2>
+    <div class="box1">BOX 1</div>
+    <div class="box2">BOX 2</div>
+    <div class="box3">BOX 3</div>
+</body>
+</html>
+
+            <!-- Used to Decide Overlapping Position -->
+        <!-- By Default Element Written Before Remains "Under" and Elements Written After Remain "Over". This is Controlled by z-index-->
+
+        <!-- It decides the stack level of element
+            z-index: auto (0); {Default z-index}
+            z-index: 1 / 2 / . . . (Moves Towards Top (Over))
+            z-index: -1 / 2 / . . . (Moves Towards Bottom (Under))
+        -->
+
+        <!-- z-index: Doesnt work for position static -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Universal Selector */
+        * {
+            color: red;
+        }
+
+        /* Element Selector */
+        h2, h3 {
+            color: blueviolet;
+        }
+
+        /* Class Selector (Grouping of Elements): Referenced by a dot */
+        .class1 {
+            color: blue;
+        }
+
+        /* ID Selector (Uniquely Identifies an Element): Referenced by Hash */
+        #p101 {
+            color: magenta;
+        }
+        #p102 {
+            color: mediumseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+
+    <p class="class1">Javascript</p>
+    <p class="class1">React JS</p>
+    <p class="class1">Tailwind CSS</p>
+
+    <p id="p101">This is ID 101</p>
+    <p id="p102">This is ID 102</p>
+</body>
+</html>
+    <!-- CSS is Applied in Top Down Approach Which Means That if a Style for an Element is Already Provided at Top and Again Style for Same Element is Provided at Bottom, Then the Bottom Style Will be Applied -->
+
+    <!-- Both Class and ID Name Cannot Start With a Number -->
